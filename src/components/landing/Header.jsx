@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full top-0 z-50 bg-white backdrop-blur-md border-b border-white/10 fixed">
+    <div className="w-full top-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/10 fixed">
       <div className="containerBox">
         <header className="w-full">
           <div className="flex items-center justify-between px-4 lg:px-[120px] py-4">
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex gap-6 text-sm">
+            <nav className="hidden lg:flex gap-6 text-base">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.name}
@@ -36,7 +36,7 @@ const Header = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-red-500 font-semibold"
-                      : "hover:text-red-400 transition"
+                      : "text-white"
                   }
                 >
                   {link.name}

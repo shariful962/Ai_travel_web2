@@ -31,7 +31,7 @@ const Layout = () => {
       <Header />
 
       {/* Main content grows to fill available space */}
-      <main className="flex-grow">
+      <main className="flex-grow bg-dark">
         <Outlet />
       </main>
 

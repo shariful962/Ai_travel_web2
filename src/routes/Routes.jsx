@@ -10,6 +10,7 @@ import OtpVerify from "../components/auth/OtpVerify";
 import ResetPassword from "../components/auth/ResetPassword";
 
 import TripPlanner from "../pages/trip planner/TripPlanner";
+import PricingPlans from "../pages/pricing/PricingPlans";
 
 
 
@@ -20,7 +21,8 @@ export const router = createBrowserRouter([
         errorElement: <Error />,
         children: [
             {index: true, Component: App},
-            {path: 'trip-planner', Component: TripPlanner}
+            {path: 'trip-planner', Component: TripPlanner},
+            {path: 'pricing', Component: PricingPlans}
         ]
     },
     {
