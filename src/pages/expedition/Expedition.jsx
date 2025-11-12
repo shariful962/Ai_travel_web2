@@ -43,7 +43,7 @@ const Expedition = () => {
             <img
               src={Icons.expedition1}
               alt="Venice bridge"
-              className="w-full h-[450px] object-cover "
+              className="w-full h-[350px] object-cover "
             />
           </div>
 
@@ -89,7 +89,7 @@ const Expedition = () => {
             <img
               src={Icons.expedition2}
               alt="Venice bridge"
-              className="w-full h-[450px] object-cover"
+              className="w-full h-[350px] object-cover"
             />
           </div>
 
@@ -181,7 +181,7 @@ const Expedition = () => {
             <img
               src={Icons.expedition3}
               alt="Venice bridge"
-              className="w-full h-[450px] object-cover "
+              className="w-full h-[350px] object-cover "
             />
           </div>
 

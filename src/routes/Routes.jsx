@@ -15,6 +15,7 @@ import Profile from "../pages/profile/Profile"
 import EditProfile from "../pages/profile/EditProfile";
 import PrivacyPolicy from "../pages/profile/PrivacyPolicy";
 import Expedition from "../pages/expedition/Expedition";
+import Hitlists from "../pages/hitlists/Hitlists";
 
 
 
@@ -27,6 +28,7 @@ export const router = createBrowserRouter([
             {index: true, Component: App},
             {path: 'trip-planner', Component: TripPlanner},
             {path: 'expedition', Component: Expedition},
+            {path: 'hitlists', Component: Hitlists},
             {path: 'pricing', Component: PricingPlans},
             {path:'profile', Component: Profile},
             {path:'profile/edit', Component: EditProfile},

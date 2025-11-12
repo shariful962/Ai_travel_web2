@@ -19,6 +19,13 @@ import expedition1 from '../assets/expedition1.jpg';
 import expedition2 from '../assets/expedition2.jpg';
 import expedition3 from '../assets/expedition3.jpg';
 import profile1 from '../assets/profile1.jpg';
+import hitlist1 from '../assets/hitlist1.jpg';
+import hitlist2 from '../assets/hitlist2.jpg';
+import hitlist3 from '../assets/hitlist3.jpg';
+import hitlist4 from '../assets/hitlist4.jpg';
+import hitlistIcon1 from '../assets/hitlistIcon1.png';
+import hitlistIcon2 from '../assets/hitlistIcon2.png';
+import hitlistIcon3 from '../assets/hitlistIcon3.png';
 
 
 
@@ -44,7 +51,14 @@ const Icons = {
   expedition1: expedition1,
   expedition2: expedition2,
   expedition3: expedition3,
-  profile1: profile1
+  profile1: profile1,
+  hitlist1: hitlist1,
+  hitlist2: hitlist2,
+  hitlist3: hitlist3,
+  hitlist4: hitlist4,
+  hitlistIcon1: hitlistIcon1,
+  hitlistIcon2: hitlistIcon2,
+  hitlistIcon3: hitlistIcon3
 
 }
 
