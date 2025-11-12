@@ -59,7 +59,7 @@ const Header = () => {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "AI Trip Planner", path: "/trip-planner" },
-    { label: "Expedition Feed", path: "/expedition-feed" },
+    { label: "Expedition Feed", path: "/expedition" },
     { label: "Hitlists", path: "/hitlists" },
     { label: "Pricing", path: "/pricing" },
     { label: "About", path: "/about" },
