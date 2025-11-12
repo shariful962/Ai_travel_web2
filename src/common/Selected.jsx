@@ -9,9 +9,10 @@ const Selected = () => {
   };
 
   return (
+    <div className="max-w-6xl mx-auto">
     <form
       onSubmit={handleSubmit}
-      className="bg-[#111] p-3 rounded-lg flex flex-wrap items-center justify-center gap-3 w-full max-w-5xl mx-auto"
+      className="bg-[#000000] p-3 rounded-lg flex flex-wrap items-center justify-center gap-3 w-full max-w-5xl "
     >
       {/* Location */}
       <div className="flex items-center gap-2 bg-[#1c1c1c] px-3 py-2 rounded-md w-full sm:w-auto">
@@ -62,6 +63,7 @@ const Selected = () => {
         Explore
       </button>
     </form>
+    </div>
   );
 };
 

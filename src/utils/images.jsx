@@ -12,10 +12,12 @@ import apple from '../assets/apple.svg';
 import loveIcon from '../assets/loveIcon.png';
 import userIcon from '../assets/userIcon.png';
 import AiIcon from '../assets/AiIcon.png';
-import travel1 from '../assets/travel1.png'
-import travel2 from '../assets/travel2.png'
-import travel3 from '../assets/travel3.png'
-import expedition1 from '../assets/expedition1.jpg'
+import travel1 from '../assets/travel1.png';
+import travel2 from '../assets/travel2.png';
+import travel3 from '../assets/travel3.png';
+import expedition1 from '../assets/expedition1.jpg';
+import expedition2 from '../assets/expedition2.jpg';
+import profile1 from '../assets/profile1.jpg';
 
 
 
@@ -37,7 +39,9 @@ const Icons = {
   travel1: travel1,
   travel2: travel2,
   travel3: travel3,
-  expedition1: expedition1
+  expedition1: expedition1,
+  expedition2: expedition2,
+  profile1: profile1
 
 }
 
