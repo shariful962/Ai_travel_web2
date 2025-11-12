@@ -120,7 +120,7 @@ const CreatePostModal = ({ onClose }) => {
           value={postText}
           onChange={(e) => setPostText(e.target.value)}
           placeholder="What’s on your mind?"
-          className="w-full bg-transparent text-gray-300 px-5 outline-none resize-none h-32 placeholder-gray-500"
+          className="w-full bg-transparent text-gray-300 px-5 outline-none resize-none h-32 md:h-44 placeholder-gray-500"
         />
 
         {/* Image Preview */}
@@ -129,13 +129,13 @@ const CreatePostModal = ({ onClose }) => {
             <img
               src={imagePreview}
               alt="Preview"
-              className="rounded-lg w-[200px] object-cover h-[200px]"
+              className="rounded-lg w-[150px] object-cover h-[150px]"
             />
             <button
               onClick={removeImage}
               className="absolute top-2 right-7 bg-black/60 hover:bg-black text-white rounded-full p-1"
             >
-              <FiX size={18} />
+              <FiX size={18} className="cursor-pointer" />
             </button>
           </div>
         )}
@@ -153,19 +153,19 @@ const CreatePostModal = ({ onClose }) => {
             />
 
             {/* Image upload icon */}
-            <FaImage
+            <FaImage size={28}
               className="cursor-pointer hover:text-blue-400"
               onClick={() => fileInputRef.current.click()}
             />
 
             {/* (Optional) Location icon */}
-            <FaMapMarkerAlt className="cursor-pointer hover:text-Primary" />
+            <FaMapMarkerAlt size={28} className="cursor-pointer hover:text-Primary" />
           </div>
 
           <button
             onClick={handlePost}
             disabled={!postText.trim() && !imagePreview}
-            className={`px-6 py-1.5 rounded-full font-medium ${
+            className={`px-6 w-[150px] py-1.5 rounded-full font-medium ${
               postText.trim() || imagePreview
                 ? "bg-Primary hover:opacity-90 cursor-pointer"
                 : "bg-gray-600 cursor-not-allowed"

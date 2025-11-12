@@ -16,6 +16,8 @@ import EditProfile from "../pages/profile/EditProfile";
 import PrivacyPolicy from "../pages/profile/PrivacyPolicy";
 import Expedition from "../pages/expedition/Expedition";
 import Hitlists from "../pages/hitlists/Hitlists";
+import TermsCondition from "../pages/profile/TermsCondition";
+import HelpSupport from "../pages/profile/HelpSupport";
 
 
 
@@ -32,7 +34,9 @@ export const router = createBrowserRouter([
             {path: 'pricing', Component: PricingPlans},
             {path:'profile', Component: Profile},
             {path:'profile/edit', Component: EditProfile},
-            {path:'profile/privacy-policy', Component: PrivacyPolicy}
+            {path:'profile/privacy-policy', Component: PrivacyPolicy},
+            {path:'profile/terms-condition', Component: TermsCondition},
+            {path:'profile/help-support', Component: HelpSupport},
         ]
     },
     {

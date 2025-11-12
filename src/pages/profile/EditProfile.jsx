@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { LuArrowLeft } from "react-icons/lu";
+import { IoCameraOutline } from "react-icons/io5";
+import Icons from "../../utils/images";
+import { useNavigate } from "react-router";
 
-export default function EditProfile() {
+const  EditProfile = () =>{
+  const navigate = useNavigate()
   const [showOldPassword, setShowOldPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
-  const [profileImage, setProfileImage] = useState(null);
+  const [profileImage, setProfileImage] = useState(Icons.profile1);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -18,9 +23,12 @@ export default function EditProfile() {
   };
 
   return (
-    <div className="min-h-screen bg-[#1e1e1e] flex items-center justify-center pt-20">
+    <div className="min-h-screen bg-dark flex items-center justify-center pt-20">
       <div className="bg-black text-white p-8 rounded-xl shadow-lg w-full max-w-md border border-gray-700">
-        <h2 className="text-xl font-semibold mb-6 text-gray-200">Edit Profile</h2>
+        <div className="flex items-center gap-x-2.5 mb-6">
+          <LuArrowLeft size={24} className="cursor-pointer" onClick={()=>navigate('/profile')} />
+          <h2 className="text-xl font-semibold  text-gray-200">Edit Profile</h2>
+        </div>
 
         {/* Profile Image */}
         <div className="flex justify-center mb-6 relative">
@@ -31,7 +39,7 @@ export default function EditProfile() {
               className="hidden"
               onChange={handleImageChange}
             />
-            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-600 relative">
+            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-600 ">
               <img
                 src={
                   profileImage ||
@@ -40,9 +48,11 @@ export default function EditProfile() {
                 alt="Profile"
                 className="object-cover w-full h-full"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                <span className="text-sm">Change</span>
-              </div>
+             
+                <div className="bg-gray-400 z-200 h-8 w-8 rounded-full flex items-center justify-center absolute bottom-1 left-52">
+                  <IoCameraOutline size={20}/>
+                </div>
+             
             </div>
           </label>
         </div>
@@ -51,28 +61,28 @@ export default function EditProfile() {
         <form onSubmit={handleSubmit}>
           {/* Full Name */}
           <div className="mb-4">
-            <label className="block text-sm mb-1 text-gray-400">Full Name</label>
+            <label className="block text-sm mb-1 text-white">Full Name</label>
             <input
               type="text"
               placeholder="Name"
-              className="w-full p-2 bg-transparent border border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500"
+              className="w-full p-2 bg-transparent border border-white rounded-md focus:outline-none"
               required
             />
           </div>
 
           {/* Old Password */}
           <div className="mb-4 relative">
-            <label className="block text-sm mb-1 text-gray-400">Old Password</label>
+            <label className="block text-sm mb-1 text-white">Old Password</label>
             <input
               type={showOldPassword ? "text" : "password"}
               placeholder="********"
-              className="w-full p-2 bg-transparent border border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 pr-10"
+              className="w-full p-2 bg-transparent border border-white rounded-md focus:outline-none"
               required
             />
             <button
               type="button"
               onClick={() => setShowOldPassword(!showOldPassword)}
-              className="absolute right-2 top-8 text-gray-400"
+              className="absolute right-2 top-9 text-gray-400 cursor-pointer"
             >
               {showOldPassword ? <EyeOff size={18} /> : <Eye size={18} />}
             </button>
@@ -80,17 +90,17 @@ export default function EditProfile() {
 
           {/* New Password */}
           <div className="mb-6 relative">
-            <label className="block text-sm mb-1 text-gray-400">New Password</label>
+            <label className="block text-sm mb-1 text-white">New Password</label>
             <input
               type={showNewPassword ? "text" : "password"}
               placeholder="********"
-              className="w-full p-2 bg-transparent border border-gray-600 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 pr-10"
+              className="w-full p-2 bg-transparent border border-white rounded-md focus:outline-none"
               required
             />
             <button
               type="button"
               onClick={() => setShowNewPassword(!showNewPassword)}
-              className="absolute right-2 top-8 text-gray-400"
+              className="absolute right-2 top-9 text-gray-400 cursor-pointer"
             >
               {showNewPassword ? <EyeOff size={18} /> : <Eye size={18} />}
             </button>
@@ -99,7 +109,7 @@ export default function EditProfile() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2 rounded-md transition"
+            className="w-full bg-Secondary text-white font-medium py-2 rounded-md cursor-pointer"
           >
             Save & Change
           </button>
@@ -109,3 +119,5 @@ export default function EditProfile() {
     </div>
   );
 }
+
+export default EditProfile;

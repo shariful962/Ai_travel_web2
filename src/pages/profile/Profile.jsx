@@ -10,15 +10,16 @@ import {
 } from "lucide-react";
 import { FaChevronRight } from "react-icons/fa6";
 import { Link } from "react-router";
+import Icons from "../../utils/images";
 
 
 const Profile = () => {
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center py-10 text-white pt-20">
+    <div className="min-h-screen bg-dark flex flex-col items-center justify-center py-10 text-white pt-20">
       {/* profile name and email with image  */}
       <div className="flex flex-col items-center mb-8">
         <img
-          src="https://via.placeholder.com/100"
+          src={Icons.profile1}
           alt="Profile"
           className="w-24 h-24 rounded-full border-4 border-gray-700 mb-4"
         />
@@ -74,7 +75,7 @@ const Profile = () => {
             </Link>
             </div>
            <div>
-             <Link to="/profile/saved">
+             <Link to="/profile/terms-condition">
             <div className="flex items-center justify-between cursor-pointer">
                 <div className="flex items-center gap-x-3">
                     <FileText /> <span>Terms & Condition</span>
@@ -93,7 +94,7 @@ const Profile = () => {
         </h3>
         <div className="mt-4 space-y-2.5">
             <div>
-                <Link to="/profile/edit">
+                <Link to="/profile/help-support">
                 <div className="flex items-center justify-between cursor-pointer">
                 <div className="flex items-center gap-x-3">
                     <HelpCircle /> <span>Help & Support</span>
