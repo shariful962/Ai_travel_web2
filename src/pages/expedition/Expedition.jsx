@@ -106,6 +106,98 @@ const Expedition = () => {
             </button>
           </div>
         </div>
+
+        <div className="  bg-dark2 text-white rounded-2xl p-4 w-full max-w-[730px] mx-auto">
+          {/* Header */}
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-3">
+              <img
+                src={Icons.profile1}
+                alt="profile"
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="text-lg font-medium">Anne Jones</p>
+                <p className="text-xs text-white/50">25m ago</p>
+              </div>
+            </div>
+            <p className="text-xs text-zinc-400">
+              {" "}
+              <IoLocationOutline size={18} className="inline" /> Italy
+            </p>
+          </div>
+
+          {/* Caption */}
+          <p className="mb-3">The is so damn awosome with Hitman Jack. You should definetely try to make a trip for you. It is very eassy and convenient</p>
+
+          {/* Image */}
+          {/* <div className="rounded-xl overflow-hidden">
+            <img
+              src={Icons.expedition1}
+              alt="Venice bridge"
+              className="w-full h-[450px] object-cover "
+            />
+          </div> */}
+
+          {/* Actions */}
+          <div className="flex justify-around mt-3 pt-3 border-t border-zinc-800">
+            <button className="flex items-center gap-2 text-white cursor-pointer">
+              <Heart size={18} /> Like
+            </button>
+            <button className="flex items-center gap-2 text-white cursor-pointer">
+              <MessageCircle size={18} /> Comment
+            </button>
+            <button className="flex items-center gap-2 text-white cursor-pointer">
+              <Share2 size={18} /> Share
+            </button>
+          </div>
+        </div>
+
+        <div className="  bg-dark2 text-white rounded-2xl p-4 w-full max-w-[730px] mx-auto">
+          {/* Header */}
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-3">
+              <img
+                src={Icons.profile1}
+                alt="profile"
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="text-lg font-medium">Shakib Al Hasan</p>
+                <p className="text-xs text-white/50">1h ago</p>
+              </div>
+            </div>
+            <p className="text-xs text-zinc-400">
+              {" "}
+              <IoLocationOutline size={18} className="inline" /> Italy
+            </p>
+          </div>
+
+          {/* Caption */}
+          <p className="mb-3">The plan was so damn awosome with #HitmanJack</p>
+
+          {/* Image */}
+          <div className="rounded-xl overflow-hidden">
+            <img
+              src={Icons.expedition3}
+              alt="Venice bridge"
+              className="w-full h-[450px] object-cover "
+            />
+          </div>
+
+          {/* Actions */}
+          <div className="flex justify-around mt-3 pt-3 border-t border-zinc-800">
+            <button className="flex items-center gap-2 text-white cursor-pointer">
+              <Heart size={18} /> Like
+            </button>
+            <button className="flex items-center gap-2 text-white cursor-pointer">
+              <MessageCircle size={18} /> Comment
+            </button>
+            <button className="flex items-center gap-2 text-white cursor-pointer">
+              <Share2 size={18} /> Share
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
