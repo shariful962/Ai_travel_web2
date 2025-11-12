@@ -12,6 +12,7 @@ import ResetPassword from "../components/auth/ResetPassword";
 import TripPlanner from "../pages/trip planner/TripPlanner";
 import PricingPlans from "../pages/pricing/PricingPlans";
 import Profile from "../pages/profile/Profile"
+import EditProfile from "../pages/profile/EditProfile";
 
 
 
@@ -24,7 +25,8 @@ export const router = createBrowserRouter([
             {index: true, Component: App},
             {path: 'trip-planner', Component: TripPlanner},
             {path: 'pricing', Component: PricingPlans},
-            {path:'profile', Component: Profile}
+            {path:'profile', Component: Profile},
+            {path:'profile/edit', Component: EditProfile}
         ]
     },
     {
