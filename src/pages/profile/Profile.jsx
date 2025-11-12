@@ -62,7 +62,7 @@ const Profile = () => {
         </h3>
         <div className="mt-4 space-y-2.5">
             <div>
-                <Link to="/profile/edit">
+                <Link to="/profile/privacy-policy">
                 <div className="flex items-center justify-between cursor-pointer">
                 <div className="flex items-center gap-x-3">
                     <Shield /> <span>Privacy Policy</span>

@@ -13,6 +13,7 @@ import TripPlanner from "../pages/trip planner/TripPlanner";
 import PricingPlans from "../pages/pricing/PricingPlans";
 import Profile from "../pages/profile/Profile"
 import EditProfile from "../pages/profile/EditProfile";
+import PrivacyPolicy from "../pages/profile/PrivacyPolicy";
 
 
 
@@ -26,7 +27,8 @@ export const router = createBrowserRouter([
             {path: 'trip-planner', Component: TripPlanner},
             {path: 'pricing', Component: PricingPlans},
             {path:'profile', Component: Profile},
-            {path:'profile/edit', Component: EditProfile}
+            {path:'profile/edit', Component: EditProfile},
+            {path:'profile/privacy-policy', Component: PrivacyPolicy}
         ]
     },
     {
