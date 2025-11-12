@@ -11,7 +11,7 @@ const Header = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "AI Trip Planner", path: "/trip-planner" },
-    { name: "Expedition Feed", path: "/expedition-feed" },
+    { name: "Expedition Feed", path: "/expedition" },
     { name: "Hitlists", path: "/hitlists" },
     { name: "Pricing", path: "/pricing" },
     { name: "About", path: "/about" },

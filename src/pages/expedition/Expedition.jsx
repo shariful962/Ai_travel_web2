@@ -1,10 +1,13 @@
 import React from 'react'
 import { Heart, MessageCircle, Share2 } from "lucide-react";
 import Icons from '../../utils/images';
+import Selected from '../../common/Selected';
 
 const Expedition = () => {
+
   return (
     <div className='my-20'>
+      <Selected />
      <div className="  bg-zinc-900 text-white rounded-2xl p-4 w-full max-w-md mx-auto">
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
