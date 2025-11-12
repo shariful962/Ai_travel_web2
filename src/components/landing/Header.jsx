@@ -7,6 +7,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Header = () => {
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
 
   const navLinks = [
     { name: "Home", path: "/" },

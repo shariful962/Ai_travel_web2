@@ -21,13 +21,15 @@
 
 import React from "react";
 import { Outlet } from "react-router";
-import Header from "../components/landing/Header";
+// import Header from "../components/landing/Header";
 import Footer from "../components/landing/Footer";
+import Header from "../components/navbar/Header";
 
 const Layout = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header stays at the top */}
+      {/* <Header /> */}
       <Header />
 
       {/* Main content grows to fill available space */}
