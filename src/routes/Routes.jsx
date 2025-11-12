@@ -11,6 +11,7 @@ import ResetPassword from "../components/auth/ResetPassword";
 
 import TripPlanner from "../pages/trip planner/TripPlanner";
 import PricingPlans from "../pages/pricing/PricingPlans";
+import Profile from "../pages/profile/Profile"
 
 
 
@@ -22,7 +23,8 @@ export const router = createBrowserRouter([
         children: [
             {index: true, Component: App},
             {path: 'trip-planner', Component: TripPlanner},
-            {path: 'pricing', Component: PricingPlans}
+            {path: 'pricing', Component: PricingPlans},
+            {path:'profile', Component: Profile}
         ]
     },
     {
