@@ -18,6 +18,7 @@ import Expedition from "../pages/expedition/Expedition";
 import Hitlists from "../pages/hitlists/Hitlists";
 import TermsCondition from "../pages/profile/TermsCondition";
 import HelpSupport from "../pages/profile/HelpSupport";
+import FAQ from "../pages/profile/FAQ";
 
 
 
@@ -34,6 +35,7 @@ export const router = createBrowserRouter([
             {path: 'pricing', Component: PricingPlans},
             {path:'profile', Component: Profile},
             {path:'profile/edit', Component: EditProfile},
+            {path:'profile/edit/faq', Component: FAQ},
             {path:'profile/privacy-policy', Component: PrivacyPolicy},
             {path:'profile/terms-condition', Component: TermsCondition},
             {path:'profile/help-support', Component: HelpSupport},

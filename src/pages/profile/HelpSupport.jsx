@@ -25,7 +25,7 @@ const HelpSupport = () => {
         </h3>
         <div className="mt-4 space-y-3">
             <div className="border p-2 rounded-[10px]">
-                <Link to="/profile/edit">
+                <Link to="/profile/edit/faq">
                 <div className="flex items-center justify-between cursor-pointer">
                 <div className="flex items-center gap-x-3">
                      <span>FAQ</span>

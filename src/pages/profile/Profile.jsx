@@ -26,7 +26,7 @@ const Profile = () => {
         <h2 className="text-xl font-semibold">Tamim Sarker</h2>
         <p className="text-gray-400 text-sm">Tamim257@gmail.com</p>
       </div>
-      <div className="w-full max-w-md bg-black/40 rounded-2xl border border-gray-700 p-6">
+      <div className="w-full max-w-[600px] bg-black/40 rounded-2xl border border-gray-700 p-6">
         <h3 className="text-gray-400 text-sm font-semibold uppercase tracking-wider">
           Account Information
         </h3>
@@ -57,7 +57,7 @@ const Profile = () => {
            </div>
         </div>
       </div>
-       <div className="w-full max-w-md bg-black/40 rounded-2xl border border-gray-700 p-6 mt-5">
+       <div className="w-full max-w-[600px] bg-black/40 rounded-2xl border border-gray-700 p-6 mt-5">
         <h3 className="text-gray-400 text-sm font-semibold uppercase tracking-wider">
           Policy Center
         </h3>
@@ -88,7 +88,7 @@ const Profile = () => {
            </div>
         </div>
       </div>
-       <div className="w-full max-w-md bg-black/40 rounded-2xl border border-gray-700 p-6 mt-5">
+       <div className="w-full max-w-[600px] bg-black/40 rounded-2xl border border-gray-700 p-6 mt-5">
         <h3 className="text-gray-400 text-sm font-semibold uppercase tracking-wider">
           Settings
         </h3>

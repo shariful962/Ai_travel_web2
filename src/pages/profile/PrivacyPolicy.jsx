@@ -4,7 +4,7 @@ import { Lock } from "lucide-react";
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-[#1e1e1e] flex items-center justify-center">
-      <div className="bg-black text-white border border-gray-700 rounded-xl p-6 w-full max-w-md shadow-lg">
+      <div className="bg-black text-white border border-gray-700 rounded-xl p-6 w-full max-w-[600px] shadow-lg">
         {/* Header */}
         <div className="flex items-center mb-4">
           <Lock size={18} className="text-gray-400 mr-2" />

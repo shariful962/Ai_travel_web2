@@ -24,7 +24,7 @@ const  EditProfile = () =>{
 
   return (
     <div className="min-h-screen bg-dark flex items-center justify-center pt-20">
-      <div className="bg-black text-white p-8 rounded-xl shadow-lg w-full max-w-md border border-gray-700">
+      <div className="bg-black text-white p-8 rounded-xl shadow-lg w-full max-w-[600px] border border-gray-700">
         <div className="flex items-center gap-x-2.5 mb-6">
           <LuArrowLeft size={24} className="cursor-pointer" onClick={()=>navigate('/profile')} />
           <h2 className="text-xl font-semibold  text-gray-200">Edit Profile</h2>
