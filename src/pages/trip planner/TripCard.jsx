@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Heart,  Share2 } from "lucide-react";
 import Icons from "../../utils/images";
+import { RiShareForwardLine } from "react-icons/ri";
 
 const TripCard = ({ destination }) => {
   return (
@@ -40,7 +41,7 @@ const TripCard = ({ destination }) => {
       </button>
       <div className="flex justify-between  text-gray-400 mt-2 px-1">
         <span><Heart className="cursor-pointer"/></span>
-        <span className="flex gap-x-2.5 items-center">Share <Share2 className="cursor-pointer"/> </span>
+        <span className="flex gap-x-2.5 items-center cursor-pointer"> <RiShareForwardLine size={24} /> Share </span>
       </div>
     </div>
   );

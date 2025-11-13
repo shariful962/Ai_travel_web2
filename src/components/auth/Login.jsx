@@ -18,9 +18,9 @@ const Login = () => {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
-
+    
     //  API call / authentication 
-
+    navigate('/')
    
   };
 

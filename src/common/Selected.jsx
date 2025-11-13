@@ -71,11 +71,14 @@
 
 import React from "react";
 import { FiMapPin, FiChevronDown } from "react-icons/fi";
+import { useNavigate } from "react-router";
 
 const Selected = () => {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted!");
+    navigate('/trip-planner')
   };
 
   return (
