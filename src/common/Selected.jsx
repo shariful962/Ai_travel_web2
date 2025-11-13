@@ -91,7 +91,7 @@ const Selected = () => {
             type="text"
             name="location"
             placeholder="Location"
-            className="bg-transparent outline-none text-gray-200 placeholder-gray-500 w-full"
+            className="bg-transparent outline-none text-gray-200  w-full"
           />
         </div>
 

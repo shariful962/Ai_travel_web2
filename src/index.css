@@ -64,3 +64,17 @@
 .nav-link-active::after {
   width: 100%;
 }
+
+
+
+/* Hide scrollbar but keep scroll functionality */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE and Edge */
+}
+

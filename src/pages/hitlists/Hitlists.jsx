@@ -37,7 +37,7 @@ const Hitlists = () => {
   return (
     <div className="containerBox px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-[50px] mt-28 font-semibold mb-6 text-white">
+        <h1 className="text-3xl md:text-[50px] mt-28 font-medium mb-6 text-white">
           Hitlists
         </h1>
         <div className="mb-4.5">
@@ -57,7 +57,7 @@ const Hitlists = () => {
         </div>
         </div>
 
-        <h1 className="text-3xl md:text-[50px] mt-6 font-semibold mb-6 text-white">
+        <h1 className="text-3xl md:text-[50px] mt-6 font-medium mb-6 text-white">
           Misson Vault
         </h1>
 
@@ -101,7 +101,7 @@ const Hitlists = () => {
           ))}
         </div>
 
-        <h1 className="text-3xl md:text-[50px] mt-6 font-semibold mb-6 text-white">
+        <h1 className="text-3xl md:text-[50px] mt-6 font-medium mb-6 text-white">
           On the Radar
         </h1>
 
