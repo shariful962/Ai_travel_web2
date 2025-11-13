@@ -139,7 +139,7 @@ const Header = () => {
           <header className="w-full">
             <div className="flex items-center justify-between px-4 lg:px-[120px] py-4">
               {/* Logo */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 cursor-pointer" onClick={()=>navigate('/')}>
                 <img src={Icons.navLogo} alt="Hitman Track" className="w-[150px] h-16" />
               </div>
 
