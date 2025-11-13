@@ -47,7 +47,7 @@ const PricingPlans = () => {
         <div className="bg-dark">
             <div className="containerBox">
                 <section className="py-20  text-center">
-                    <h2 className="text-3xl md:text-[50px] font-bold mb-10 text-white">Subscription Plans</h2>
+                    <h2 className="text-3xl md:text-[42px] font-bold mb-10 text-white pt-8">Subscription Plans</h2>
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
                         {plans.map((plan, i) => (
                             <div

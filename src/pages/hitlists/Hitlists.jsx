@@ -5,6 +5,7 @@ import { FaHeart, FaRegHeart, FaShareAlt } from "react-icons/fa";
 import { Heart, MessageCircle, Share2 } from "lucide-react";
 import Icons from "../../utils/images";
 import { IoLocationOutline } from "react-icons/io5";
+import { RiShareForwardLine } from "react-icons/ri";
 
 const trips = [
   {
@@ -37,7 +38,7 @@ const Hitlists = () => {
   return (
     <div className="containerBox px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-[50px] mt-28 font-medium mb-6 text-white">
+        <h1 className="text-3xl md:text-[42px] mt-28 font-medium mb-6 ml-3 text-white">
           Hitlists
         </h1>
         <div className="mb-4.5">
@@ -57,7 +58,7 @@ const Hitlists = () => {
         </div>
         </div>
 
-        <h1 className="text-3xl md:text-[50px] mt-6 font-medium mb-6 text-white">
+        <h1 className="text-3xl md:text-[42px] mt-6 font-medium mb-6 ml-2 text-white">
           Misson Vault
         </h1>
 
@@ -92,7 +93,7 @@ const Hitlists = () => {
                     <FaRegHeart size={20} />
                   </button>
                   <button className="flex items-center gap-2 cursor-pointer">
-                    <FaShareAlt size={18} />{" "}
+                    <RiShareForwardLine size={24} /> 
                     <span className="text-sm">Share</span>
                   </button>
                 </div>
@@ -101,7 +102,7 @@ const Hitlists = () => {
           ))}
         </div>
 
-        <h1 className="text-3xl md:text-[50px] mt-6 font-medium mb-6 text-white">
+        <h1 className="text-3xl md:text-[42px] mt-6 font-medium mb-6 text-white">
           On the Radar
         </h1>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Heart, MessageCircle, Share2 } from "lucide-react";
+import { RiShareForwardLine } from "react-icons/ri";
 import { IoLocationOutline } from "react-icons/io5";
 import Icons from "../../utils/images";
 import Selected from "../../common/Selected";
@@ -7,7 +8,7 @@ import Selected from "../../common/Selected";
 const Expedition = () => {
   return (
     <div className="my-20 max-w-6xl mx-auto px-4">
-      <h1 className="text-3xl md:text-[50px]  font-semibold text-Primary mt-28 mb-6">
+      <h1 className="text-3xl md:text-[42px]  font-semibold text-Primary mt-28 mb-6 ml-3">
         Expedition Feed
       </h1>
       <Selected />
@@ -56,7 +57,7 @@ const Expedition = () => {
               <MessageCircle size={18} /> Comment
             </button>
             <button className="flex items-center gap-2 text-white cursor-pointer">
-              <Share2 size={18} /> Share
+              <RiShareForwardLine size={24} /> Share
             </button>
           </div>
         </div>
@@ -102,7 +103,7 @@ const Expedition = () => {
               <MessageCircle size={18} /> Comment
             </button>
             <button className="flex items-center gap-2 text-white cursor-pointer">
-              <Share2 size={18} /> Share
+              <RiShareForwardLine size={24} /> Share
             </button>
           </div>
         </div>
@@ -148,7 +149,7 @@ const Expedition = () => {
               <MessageCircle size={18} /> Comment
             </button>
             <button className="flex items-center gap-2 text-white cursor-pointer">
-              <Share2 size={18} /> Share
+             <RiShareForwardLine size={24} /> Share
             </button>
           </div>
         </div>
@@ -194,7 +195,7 @@ const Expedition = () => {
               <MessageCircle size={18} /> Comment
             </button>
             <button className="flex items-center gap-2 text-white cursor-pointer">
-              <Share2 size={18} /> Share
+              <RiShareForwardLine size={24} /> Share
             </button>
           </div>
         </div>

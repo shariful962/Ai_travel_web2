@@ -62,6 +62,7 @@ import { Outlet, useLocation } from "react-router";
 import Header from "../components/navbar/Header";
 // import Header from "../components/landing/Header";
 import Footer from "../components/landing/Footer";
+// import Header from "../components/Header";
 
 const Layout = () => {
   const location = useLocation();

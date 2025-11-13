@@ -373,8 +373,8 @@ export default function TripPlanner() {
                     <div
                       className={`p-3 rounded-2xl text-sm break-words ${
                         msg.sender === "user"
-                          ? "bg-blue-600 text-white rounded-br-none"
-                          : "bg-gray-700 text-gray-100 rounded-bl-none"
+                          ? "bg-dark text-white rounded-br-none"
+                          : "bg-dark2 text-gray-100 rounded-bl-none"
                       }`}
                     >
                       {msg.text}

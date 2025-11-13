@@ -66,13 +66,15 @@ import React, { useState, useRef } from "react";
 import { FiX } from "react-icons/fi";
 import { FaImage, FaMapMarkerAlt } from "react-icons/fa";
 import Icons from "../../utils/images";
+import { useNavigate } from "react-router";
 
 const CreatePostModal = ({ onClose }) => {
+  const navigate = useNavigate();
   const [postText, setPostText] = useState("");
   const [imagePreview, setImagePreview] = useState(null);
   const fileInputRef = useRef(null);
 
-  // 📁 handle image file select
+  //  handle image file select
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -81,17 +83,18 @@ const CreatePostModal = ({ onClose }) => {
     }
   };
 
-  // 🗑️ remove selected image
+  //  remove selected image
   const removeImage = () => {
     setImagePreview(null);
     fileInputRef.current.value = null;
   };
 
-  // 🧠 handle post submit (for now just console log)
+  //  handle post submit (for now just console log)
   const handlePost = () => {
     console.log("Post content:", postText);
     console.log("Attached image:", imagePreview);
     onClose();
+    navigate("/expedition")
   };
 
   return (
