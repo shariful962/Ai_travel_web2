@@ -164,7 +164,7 @@ const Header = () => {
               <div className="hidden lg:flex items-center gap-3">
                 <button
                   onClick={() => setShowCreatePost(true)}
-                  className="px-4 py-1.5 bg-Primary text-white rounded-full cursor-pointer"
+                  className="px-4 py-1.5 bg-Primary text-white rounded-lg cursor-pointer"
                 >
                   + Create Post 
                 </button>

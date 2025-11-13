@@ -4,7 +4,7 @@ import { FaMicrophone } from "react-icons/fa";
 
 export default function TripPlanner() {
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Hey there! Tell me where you’d like to go 🌍" },
+    { sender: "bot", text: "Hey there! Tell me where you’d like to go " },
   ]);
   const [input, setInput] = useState("");
   const chatBoxRef = useRef(null);
@@ -29,7 +29,7 @@ export default function TripPlanner() {
       setTimeout(() => {
         setMessages((prev) => [
           ...prev,
-          { sender: "bot", text: `Got it! Planning a trip to "${input}" 😎` },
+          { sender: "bot", text: `Got it! Planning a trip to " ${input} "` },
         ]);
       }, 600);
     }
@@ -39,7 +39,7 @@ export default function TripPlanner() {
     <div className="flex h-screen bg-[#1e1e1e] text-white">
       {/* Sidebar */}
       <div className="w-64 bg-[#2a2a2a] border-r border-gray-700 flex flex-col p-4 pt-32">
-        <button className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 transition rounded-md py-2 mb-4">
+        <button className="flex items-center justify-center bg-[#1e1e1e] rounded-md py-2 mb-4 cursor-pointer">
           <FiPlus className="mr-2" /> New Chat
         </button>
 
@@ -69,11 +69,11 @@ export default function TripPlanner() {
 
       {/* Main Chat Section */}
       <div className="flex-1 flex flex-col items-center justify-center p-4">
-        <p className="text-sm mb-6 text-gray-300 text-center">
+        <p className="text-sm mb-6 text-gray-300 text-center pt-28 ">
           Just tell us where you want to go and we will create your perfect trip.
         </p>
 
-        <div className="bg-[#2c2c2c] rounded-2xl p-4 w-full max-w-md h-[70vh] flex flex-col shadow-md">
+        <div className="bg-transparent rounded-2xl p-4 w-full max-w-[700px] min-h-[calc(85vh-112px)] flex flex-col shadow-md">
           {/* Scrollable Chat Box */}
           <div
             ref={chatBoxRef}
@@ -89,8 +89,8 @@ export default function TripPlanner() {
                 <div
                   className={`p-3 rounded-2xl text-sm max-w-[80%] break-words ${
                     msg.sender === "user"
-                      ? "bg-blue-600 text-white rounded-br-none"
-                      : "bg-gray-700 text-gray-100 rounded-bl-none"
+                      ? "bg-[#090808] text-white rounded-br-none"
+                      : "bg-dark text-gray-100 rounded-bl-none"
                   }`}
                 >
                   {msg.text}
@@ -100,15 +100,15 @@ export default function TripPlanner() {
           </div>
 
           {/* Input Box */}
-          <div className="flex items-center bg-[#1e1e1e] rounded-full px-4 py-2">
-            <FiPlus className="text-gray-400 text-lg mr-3" />
+          <div className="flex items-center bg-white rounded-full px-4 py-4">
+            <FiPlus className="text-gray-400 text-lg mr-3 cursor-pointer" />
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleSend}
               placeholder="Type your destination..."
-              className="bg-transparent outline-none text-sm text-gray-300 flex-grow placeholder:text-gray-500"
+              className="bg-transparent outline-none text-sm text-gray-500 flex-grow placeholder:text-gray-500"
             />
             <FaMicrophone className="text-gray-400 text-lg ml-3 cursor-pointer" />
           </div>

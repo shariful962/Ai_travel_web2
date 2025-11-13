@@ -37,14 +37,15 @@ const Hitlists = () => {
   return (
     <div className="containerBox px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-[50px] mt-24 font-bold mb-6 text-white">
+        <h1 className="text-3xl md:text-[50px] mt-28 font-semibold mb-6 text-white">
           Hitlists
         </h1>
         <div className="mb-4.5">
           <Selected />
         </div>
 
-        <div className="flex items-center  rounded-[8px] p-2 bg-dark2 w-80">
+        <div className="ml-4">
+          <div className="flex items-center  rounded-[8px] p-2 bg-dark2 w-80">
           <input
             type="text"
             placeholder="Search"
@@ -54,8 +55,9 @@ const Hitlists = () => {
             <FaSearch />{" "}
           </button>
         </div>
+        </div>
 
-        <h1 className="text-3xl md:text-[50px] mt-6 font-bold mb-6 text-white">
+        <h1 className="text-3xl md:text-[50px] mt-6 font-semibold mb-6 text-white">
           Misson Vault
         </h1>
 
@@ -65,12 +67,12 @@ const Hitlists = () => {
           {trips.map((trip) => (
             <div
               key={trip.id}
-              className="bg-[#0f0f0f] rounded-2xl shadow-lg overflow-hidden  text-white p-4"
+              className="bg-[#0f0f0f] rounded-2xl shadow-lg overflow-hidden  text-white p-4 pb-4"
             >
               <img
                 src={trip.image}
                 alt={trip.title}
-                className="w-full h-44 object-cover rounded-2xl"
+                className="w-full h-44 object-cover rounded-lg"
               />
               <div className="mt-4">
                 <div className="flex items-center gap-x-2.5">
@@ -79,13 +81,13 @@ const Hitlists = () => {
                     alt={trip.title}
                     className="w-7.5 h-7.5 object-cover"
                   />
-                  <h2>{trip.title}</h2>
+                  <h2 className="text-sm">{trip.title}</h2>
                 </div>
-                <button className="mt-4 w-full bg-Primary text-white py-2 rounded-2xl font-medium cursor-pointer">
+                <button className="mt-4 w-full bg-Primary text-white py-2 rounded-lg font-medium cursor-pointer">
                   View Details
                 </button>
 
-                <div className="flex justify-between items-center mt-4 text-white">
+                <div className="flex justify-between items-center mt-4  text-white px-1">
                   <button className="cursor-pointer">
                     <FaRegHeart size={20} />
                   </button>
@@ -99,16 +101,16 @@ const Hitlists = () => {
           ))}
         </div>
 
-        <h1 className="text-3xl md:text-[50px] mt-6 font-bold mb-6 text-white">
+        <h1 className="text-3xl md:text-[50px] mt-6 font-semibold mb-6 text-white">
           On the Radar
         </h1>
 
           {/* on the Radar card section  */}
 
         <div className="my-10 flex items-center flex-col md:flex-row gap-6 ">
-          <div className="  bg-dark2 text-white rounded-2xl p-4 w-full md:w-1/2">
+          <div className="  bg-dark2 text-white rounded-2xl  w-full md:w-1/2">
             {/* Header */}
-            <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center justify-between mb-3 p-4">
               <div className="flex items-center gap-3">
                 <img
                   src={Icons.profile1}
@@ -127,10 +129,10 @@ const Hitlists = () => {
             </div>
 
             {/* Caption */}
-            <p className="mb-3">Hitman Jack planning so easy and convinient</p>
+            <p className="mb-3 px-4">Hitman Jack planning so easy and convinient</p>
 
             {/* Image */}
-            <div className="aspect-[4/3] rounded-xl overflow-hidden">
+            <div className="aspect-[4/3]  overflow-hidden">
               <img
                 src={Icons.expedition1}
                 alt="Venice bridge"
@@ -139,7 +141,7 @@ const Hitlists = () => {
             </div>
 
             {/* Actions */}
-            <div className="flex justify-around mt-3 pt-3 border-t border-zinc-800">
+            <div className="flex justify-around py-8  border-zinc-800">
               <button className="flex items-center gap-2 text-white cursor-pointer">
                 <Heart size={18} /> Like
               </button>
@@ -152,9 +154,9 @@ const Hitlists = () => {
             </div>
           </div>
 
-          <div className="  bg-dark2 text-white rounded-2xl p-4 w-full md:w-1/2">
+          <div className="  bg-dark2 text-white rounded-2xl  w-full md:w-1/2">
             {/* Header */}
-            <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center justify-between mb-3 p-4">
               <div className="flex items-center gap-3">
                 <img
                   src={Icons.profile1}
@@ -173,10 +175,10 @@ const Hitlists = () => {
             </div>
 
             {/* Caption */}
-            <p className="mb-3">Hitman Jack planning so easy and convinient</p>
+            <p className="mb-3 px-4">Hitman Jack planning so easy and convinient</p>
 
             {/* Image */}
-            <div className="aspect-[4/3] rounded-xl overflow-hidden">
+            <div className="aspect-[4/3]  overflow-hidden">
               <img
                 src={Icons.expedition2}
                 alt="Venice bridge"
@@ -185,7 +187,7 @@ const Hitlists = () => {
             </div>
 
             {/* Actions */}
-            <div className="flex justify-around mt-3 pt-3 border-t border-zinc-800">
+            <div className="flex justify-around py-8  border-zinc-800">
               <button className="flex items-center gap-2 text-white cursor-pointer">
                 <Heart size={18} /> Like
               </button>
