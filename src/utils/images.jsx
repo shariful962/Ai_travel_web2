@@ -26,7 +26,7 @@ import hitlist4 from '../assets/hitlist4.jpg';
 import hitlistIcon1 from '../assets/hitlistIcon1.png';
 import hitlistIcon2 from '../assets/hitlistIcon2.png';
 import hitlistIcon3 from '../assets/hitlistIcon3.png';
-
+import map from '../assets/map.png';
 
 
 
@@ -58,7 +58,8 @@ const Icons = {
   hitlist4: hitlist4,
   hitlistIcon1: hitlistIcon1,
   hitlistIcon2: hitlistIcon2,
-  hitlistIcon3: hitlistIcon3
+  hitlistIcon3: hitlistIcon3,
+  map: map
 
 }
 
