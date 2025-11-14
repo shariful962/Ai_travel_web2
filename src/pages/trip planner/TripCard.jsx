@@ -54,7 +54,7 @@ const TripCard = ({ destination }) => {
         </div>
       </div>
       <div className="spacy-y-2">
-        <h1 className="mt-2">Lorem ipsum dolor sit amet.</h1>
+        <h1 className="mt-2">“Not satisfied with this plan?”</h1>
         <button
           //   onClick={onClick}
           className="mt-2 cursor-pointer flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition"
